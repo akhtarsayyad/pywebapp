@@ -1,2 +1,2 @@
-django == 2.2.0
-django-pyodbc-azure
+django >= 2.2.1, <3
+pyodbc
