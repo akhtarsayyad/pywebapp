@@ -51,4 +51,11 @@ steps:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
     ArtifactName: 'drop'
     publishLocation: 'Container'
-
+- task: AzureRmWebAppDeployment@4
+  inputs:
+    ConnectionType: 'AzureRM'
+    azureSubscription: 'NOLA DTC (2d1e62c0-0d42-452d-9a56-a7015b6c32d9)'
+    appType: 'webAppLinux'
+    WebAppName: 'imf-py-app'
+    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    RuntimeStack: 'PYTHON|3.8'
