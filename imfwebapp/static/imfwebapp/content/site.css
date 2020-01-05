@@ -7,6 +7,7 @@ h1 {
 form{
     padding-left: 50px;
     padding-right:30px;
+    margin-top:80px
  }
 body {
     background-color: snow;
@@ -22,18 +23,32 @@ input[type=text], select, textarea {
     border-radius: 4px;
     resize: vertical;
 }
+.button {
+    display: inline-block;
+    padding: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: lightblue;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
 label {
     padding: 12px 12px 12px 0;
     display: inline-block;
 }
-input[type=submit]:hover {
+.button:hover {
     background-color: #45a049;
 }
 /* Set width on the form input elements since they're 100% wide by default */
 input,
 select,
 textarea {
-    max-width: 280px;
+  max-width: 20%;
 }
 
 /* styles for validation helpers */
