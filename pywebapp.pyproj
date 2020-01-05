@@ -46,6 +46,8 @@
   <ItemGroup>
     <Content Include="imfwebapp\static\imfwebapp\content\bootstrap.css" />
     <Content Include="imfwebapp\static\imfwebapp\content\bootstrap.min.css" />
+    <Content Include="imfwebapp\static\imfwebapp\content\IMF_logo_ENG.svg" />
+    <Content Include="imfwebapp\static\imfwebapp\content\IMF_seal_shadow.svg" />
     <Content Include="imfwebapp\static\imfwebapp\content\site.css" />
     <Content Include="imfwebapp\static\imfwebapp\fonts\glyphicons-halflings-regular.eot" />
     <Content Include="imfwebapp\static\imfwebapp\fonts\glyphicons-halflings-regular.svg" />

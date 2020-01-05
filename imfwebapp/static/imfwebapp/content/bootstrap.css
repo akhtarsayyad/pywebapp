@@ -4506,12 +4506,12 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-inverse .navbar-brand {
-  color: #999999;
+  color: none;
 }
 
 .navbar-inverse .navbar-brand:hover,
 .navbar-inverse .navbar-brand:focus {
-  color: skyblue;
+  color: none;
   background-color: transparent;
 }
 
