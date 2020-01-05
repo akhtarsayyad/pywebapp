@@ -26,7 +26,7 @@ SECRET_KEY = '1b23d6d5-02db-4360-8cf6-15076b536d5b'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['imf-py-app.azurewebsites.net', 'localhost']
 
 # Application references
 # https://docs.djangoproject.com/en/2.1/ref/settings/#std:setting-INSTALLED_APPS
