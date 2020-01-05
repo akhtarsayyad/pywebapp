@@ -1,0 +1,136 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Name>pywebapp</Name>
+    <RootNamespace>pywebapp</RootNamespace>
+    <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>a2f9355f-f757-49ab-9c14-cbcb5bc3885e</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{5F0BE9CA-D677-4A4D-8806-6076C0FAAD37};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>manage.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <LaunchProvider>Django launcher</LaunchProvider>
+    <DjangoSettingsModule>pywebapp.settings</DjangoSettingsModule>
+    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+    <OutputPath>.</OutputPath>
+    <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="imfwebapp\admin.py" />
+    <Compile Include="imfwebapp\apps.py" />
+    <Compile Include="imfwebapp\migrations\__init__.py" />
+    <Compile Include="imfwebapp\models.py" />
+    <Compile Include="imfwebapp\tests.py" />
+    <Compile Include="imfwebapp\views.py" />
+    <Compile Include="imfwebapp\__init__.py" />
+    <Compile Include="manage.py" />
+    <Compile Include="pywebapp\__init__.py" />
+    <Compile Include="pywebapp\settings.py" />
+    <Compile Include="pywebapp\urls.py" />
+    <Compile Include="pywebapp\wsgi.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="imfwebapp\static\imfwebapp\content\bootstrap.css" />
+    <Content Include="imfwebapp\static\imfwebapp\content\bootstrap.min.css" />
+    <Content Include="imfwebapp\static\imfwebapp\content\site.css" />
+    <Content Include="imfwebapp\static\imfwebapp\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="imfwebapp\static\imfwebapp\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="imfwebapp\static\imfwebapp\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="imfwebapp\static\imfwebapp\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="imfwebapp\static\imfwebapp\scripts\bootstrap.js" />
+    <Content Include="imfwebapp\static\imfwebapp\scripts\bootstrap.min.js" />
+    <None Include="imfwebapp\static\imfwebapp\scripts\jquery.validate-vsdoc.js" />
+    <None Include="imfwebapp\static\imfwebapp\scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="imfwebapp\static\imfwebapp\scripts\jquery-1.10.2.js" />
+    <Content Include="imfwebapp\static\imfwebapp\scripts\jquery-1.10.2.min.js" />
+    <Content Include="imfwebapp\static\imfwebapp\scripts\jquery-1.10.2.min.map" />
+    <Content Include="imfwebapp\static\imfwebapp\scripts\jquery.validate.js" />
+    <Content Include="imfwebapp\static\imfwebapp\scripts\jquery.validate.min.js" />
+    <Content Include="imfwebapp\static\imfwebapp\scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="imfwebapp\static\imfwebapp\scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="imfwebapp\static\imfwebapp\scripts\modernizr-2.6.2.js" />
+    <Content Include="imfwebapp\static\imfwebapp\scripts\respond.js" />
+    <Content Include="imfwebapp\static\imfwebapp\scripts\respond.min.js" />
+    <None Include="imfwebapp\static\imfwebapp\scripts\_references.js" />
+    <Content Include="imfwebapp\templates\imfwebapp\index.html" />
+    <Content Include="imfwebapp\templates\imfwebapp\layout.html" />
+    <Content Include="requirements.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="imfwebapp\" />
+    <Folder Include="imfwebapp\migrations\" />
+    <Folder Include="imfwebapp\static\" />
+    <Folder Include="imfwebapp\static\imfwebapp\" />
+    <Folder Include="imfwebapp\static\imfwebapp\content\" />
+    <Folder Include="imfwebapp\static\imfwebapp\fonts\" />
+    <Folder Include="imfwebapp\static\imfwebapp\scripts\" />
+    <Folder Include="imfwebapp\templates\" />
+    <Folder Include="imfwebapp\templates\imfwebapp\" />
+    <Folder Include="pywebapp\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="env\">
+      <Id>env</Id>
+      <Version>3.8</Version>
+      <Description>env (Python 3.8 (32-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X86</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

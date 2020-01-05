@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} </title>
+    {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'imfwebapp/content/bootstrap.min.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'imfwebapp/content/site.css' %}" />
+    <script src="{% static 'imfweb/scripts/modernizr-2.6.2.js' %}"></script>
+
+     <title>{{ title }}</title>
+</head>
+<body>
+       <div class="navbar navbar-inverse navbar-fixed-top">
+       <div class="container">
+        <a href="/" class="navbar-brand">International Monetory Fund</a>
+        </div>
+        </div>
+   <form action="/form">
+        <br> <br> <br> <br> 
+        First name: <input type="text" name="firstname" value="Akhtar" required> Input Box: <input type="text" name="field1" value="Akhtar" required> Input Box: <input type="text" name="field2" value="Akhtar" required>
+        <br><br><br>
+        Last name: <input type="text" name="lastname" value="Sayyad" required> Input Box: <input type="text" name="field3" value="Akhtar" required> Input Box: <input type="text" name="field4" value="Akhtar" required>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form> 
+    <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+    <strong>{{ message }}</strong>{{ content }}
+
+</body>
+</html>
