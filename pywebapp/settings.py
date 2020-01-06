@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '1b23d6d5-02db-4360-8cf6-15076b536d5b'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['imf-py-app.azurewebsites.net', 'localhost']
 
@@ -121,5 +121,6 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
-STATIC_URL = '/static/'
-STATIC_ROOT = 'D:/home/site/wwwroot/static'
+STATIC_URL = "/static/"
+
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
