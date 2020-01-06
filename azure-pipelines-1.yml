@@ -8,7 +8,7 @@ trigger:
 
 variables:
   # Azure Resource Manager connection created during pipeline creation
-  azureServiceConnectionId: 'effd5bf6-1f8f-4c01-a51b-7212689314fb'
+  azureServiceConnectionId: 'd07e0ea3-e938-46cc-bc1c-51520f788af0'
   
   # Web app name
   webAppName: 'imf-py-app'
@@ -23,7 +23,7 @@ variables:
   projectRoot: $(System.DefaultWorkingDirectory)
   
   # Python version: 3.7
-  pythonVersion: '3.8'
+  pythonVersion: '3.7'
 
 stages:
 - stage: Build
