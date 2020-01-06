@@ -4,9 +4,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }} </title>
-    {% load static %}
-    <link rel="stylesheet" type="text/css" href="{% static 'imfwebapp/content/bootstrap.min.css' %}" />
+    {% load static from staticfiles %}
     <link rel="stylesheet" type="text/css" href="{% static 'imfwebapp/content/site.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'imfwebapp/content/bootstrap.min.css' %}" />
     <script src="{% static 'imfwebapp/scripts/modernizr-2.6.2.js' %}"></script>
 
      <title>{{ title }}</title>
@@ -14,14 +14,14 @@
 <body>
        <div class="navbar navbar-inverse navbar-fixed-top">
        <div class="container">
-        <a href="/" class="navbar-brand"> International Monetary Fund </a>
+        <a href="/" class="navbar-brand"> INTERNATIONAL MONETARY FUND </a>
         </div>
         </div>
    <form action="/form">
         <br> <br> <br> <br> 
-        First name: <input type="text" name="firstname" value="Akhtar" required> Input Box: <input type="text" name="field1" value="Akhtar" required> Input Box: <input type="text" name="field2" value="Akhtar" required>
+        First name: <input type="text" name="firstname" value="" required> Input Box: <input type="text" name="field1" value="" required> Input Box: <input type="text" name="field2" value="" required>
         <br><br><br>
-        Last name: <input type="text" name="lastname" value="Sayyad" required> Input Box: <input type="text" name="field3" value="Akhtar" required> Input Box: <input type="text" name="field4" value="Akhtar" required>
+        Last name: <input type="text" name="lastname" value="" required> Input Box: <input type="text" name="field3" value="" required> Input Box: <input type="text" name="field4" value="" required>
         <br><br>
         <button class="button"> Submit</button>
         <input class="button" type="reset" value="Reset Form">
@@ -30,7 +30,7 @@
     <br>
     <br>
     <br>
-    <p>If you click the "Submit" button,to store the data. </p>
+    <p>Click the "Submit" button to store the record. </p>
     <strong>{{ message }}</strong>{{ content }}
 
 </body>
