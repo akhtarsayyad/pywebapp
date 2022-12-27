@@ -4,6 +4,6 @@ mysql-client==0.0.1
 pip==19.2.3
 pyodbc==4.0.28
 pytz==2019.3
-setuptools==41.2.0
+setuptools==65.5.1
 sqlparse==0.3.0
 whitenoise==5.0.1
